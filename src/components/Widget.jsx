@@ -37,7 +37,7 @@ export const Widget = ({ projectId }) => {
         <Popover>
           <PopoverTrigger asChild>
             <Button className="rounded-full shadow-lg hover:scale-105">
-              <MessageCircleIcon className="mr-2 h-5 w-5" />
+              <MessageCircleIcon className="mr-3 h-5 w-5" />
               Feedback
             </Button>
           </PopoverTrigger>
@@ -78,6 +78,7 @@ export const Widget = ({ projectId }) => {
                   <div className="space-y-2">
                     <Label htmlFor="feedback">Feedback</Label>
                     <Textarea
+                    
                       id="feedback"
                       placeholder="Tell us what you think"
                       className="min-h-[100px]"
@@ -139,7 +140,7 @@ function MessageCircleIcon(props) {
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="lucide lucide-message-circle"
+      className="lucide lucide-message-circle"
     >
       <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
     </svg>
